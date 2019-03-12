@@ -1,0 +1,24 @@
+<form (ngSubmit)="signIn()">
+  <div>
+    <h2>Login biatch!</h2>
+  </div>
+  <div class="form-group">
+    <input
+      [(ngModel)]="username"
+      placeholder="username"
+      type="text"
+      class="form-control username"
+      name="username"
+    />
+    <input
+      [(ngModel)]="password"
+      placeholder="password"
+      type="password"
+      class="form-control password"
+      name="password"
+    />
+  </div>
+  <button class="btn btn-success form-control" type="submit">
+    Submit
+  </button>
+</form>
